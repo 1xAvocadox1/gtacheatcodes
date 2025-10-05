@@ -1,0 +1,234 @@
+
+body {
+      font-family: Arial, sans-serif;
+      background: #121212;
+      color: #f1f1f1;
+      margin: 0;
+    }
+
+    .container{
+      max-width: 1200px;
+      margin: 0 auto;
+      box-sizing: border-box;
+    }
+
+    h1 {
+      text-align: center;
+      color: #ffcc00;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 20px;
+      table-layout: fixed;
+    }
+
+    th, td {
+      border: 1px solid #444;
+      padding: 10px;
+      text-align: left;
+      word-wrap: break-word;
+    }
+
+    th {
+      background: #222;
+      color: #ffcc00;
+    }
+
+    /* Make table scrollable on small screens */
+    .table-container {
+      padding: 0 20px 100px 20px;
+      overflow-x: auto;
+      box-sizing: border-box;
+    }
+
+    /* Mobile tweaks */
+    @media (max-width: 480px) {
+      body {
+        padding: 10px;
+      }
+      th, td {
+        font-size: 3vw;
+        padding: 8px;
+      }
+    }
+
+    @media (orientation: portrait) {
+      .container {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      h1 {
+        font-size: 1.8rem;
+        text-align: center;
+      }
+
+      .card {
+        width: 90%;
+        margin-bottom: 20px;
+      }
+    }
+
+
+    /* Search box */
+    #search {
+      width: 100%;
+      padding: 10px;
+      margin: 10px 0;
+      border: none;
+      border-radius: 4px;
+    }
+
+    /* countdown */
+    #countdown {
+      text-align: center;
+      font-size: 2em;
+      font-weight: bold;
+      color: lightskyblue;
+    }
+
+footer {
+  background-color: #ffcc00;
+  position: fixed;
+  height: 2em; /* give a bit more breathing room */
+  line-height: 0.1em; /* vertically centers the text */
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+  font-size: 0.8em;
+  color: #555;
+}
+
+    /* Nav Bar */
+    .navbar {
+      overflow: hidden;
+      background-color: #333;
+    }
+
+    /* Links inside nav bar */
+    .navbar a, .dropbtn {
+      float: left;
+      font-size: 16px;
+      color: white;
+      text-align: center;
+      padding: 14px 20px;
+      text-decoration: none;
+    }
+
+    /* Dropdown container */
+    .dropdown {
+      float: left;
+      overflow: hidden;
+    }
+
+    /* Dropdown button */
+    .dropdown .dropbtn {
+      border: none;
+      outline: none;
+      background: none;
+      cursor: pointer;
+    }
+
+    /* Dropdown content (hidden by default) */
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      top: 40px;
+      background-color: #444;
+      min-width: 160px;
+      z-index: 1;
+    }
+
+    /* Links inside dropdown */
+    .dropdown-content a {
+      float: none;
+      color: white;
+      padding: 12px 16px;
+      text-decoration: none;
+      display: block;
+      text-align: left;
+    }
+
+    /*Change color on hover*/ 
+    .navbar a:hover, .dropdown:hover .dropbtn, .dropdown-content a:hover {
+      background-color: #575757;
+    }
+
+    /* Keep dropdown open when active */
+    .dropdown.active .dropdown-content {
+      display: block;
+    }
+
+    /* Mobile-friendly */
+    @media screen and (max-width: 600px) {
+      .navbar a, .dropdown {
+        float: none;
+        display: block;
+        text-align: left;
+      }
+    }
+
+    
+     #captchaBox {
+      margin-left:auto;
+      margin-right:auto;
+      border-radius: 12px;
+      padding: 20px;
+      max-width: 300px;
+      width: 100%;
+      text-align: center;
+    }
+
+    #captchaBox input {
+      width: 200px;         
+      max-width: 200px;     
+      padding: 10px;
+      margin: 10px 0;
+      border: 1px solid #aaa;
+      border-radius: 6px;
+      font-size: 1rem;
+      box-sizing: border-box;
+    }
+
+    #captchaBox button {
+      background-color: #0078ff;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 6px;
+      cursor: pointer;
+      font-size: 1rem;
+    }
+
+    #captchaBox button:hover {
+      background-color: #005fcc;
+    }
+
+    #email {
+      margin-top: 20px;
+      font-weight: bold;
+      color: white;
+      display: none;
+      text-align: center;
+      word-break: break-word;
+    }
+
+    @media (max-width: 600px) {
+      #captchaBox {
+        max-width: 90%;
+        padding: 15px;
+      }
+      #captchaBox input {
+        width: 100%;
+      }
+    }
+
+    #about {
+      max-width: 800px;   
+      margin: 40px auto;      
+      padding: 0 20px;        
+      text-align: left;       
+      line-height: 1.6;
+    }
